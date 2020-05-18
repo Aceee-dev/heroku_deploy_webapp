@@ -29,19 +29,15 @@ def fibonacci_calculation(num):
 
 def fib_number(request):
     num = 0
-    result = ''
-    time_taken = ''
+    result = 0
 
     if request.GET.get('number'):
-        start_time = time.time()
         number = request.GET.get('number')
         num = int(number)
         result = fibonacci_calculation(num)
-        end_time = time.time() - start_time
-        time_taken = str(end_time)[0:4]
 
         obj = FibonacciResults.objects.create(
-            number=num, result=result, time_taken=time_taken)
+            number=num, result=result)
         obj.save()
 
     return render(
@@ -50,6 +46,5 @@ def fib_number(request):
         {
             'number': num,
             'result': result,
-            'time_taken': time_taken
         }
     )
