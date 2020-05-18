@@ -18,3 +18,4 @@ wcwidth==0.1.7
 wsgiref==0.1.2
 whitenoise==5.0.1
 gunicorn==19.6.0
+setuptools==46.4.0
