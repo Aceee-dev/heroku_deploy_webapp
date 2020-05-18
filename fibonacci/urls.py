@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'', include('fib_api.urls')),
+    url(r'^ev_od_10/',include('even_odd_10.urls')),
     url(r'^admin/', admin.site.urls),
 ]

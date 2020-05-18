@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style1.css' %}" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even_odd Results</title>
+</head>
+<body>
+    <section class="eo-ui">
+        <div class="container">
+            <form action="" method="GET">
+                <input type="search" placeholder="Type the array separated by comma" name="number">
+                <button>Get Result</button>
+            </form>
+            <div>
+                <p>Required sum of even numbers is : {{result1}}</p>
+                <br/>
+                <p>Required sum of odd numbers is : {{result2}}</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

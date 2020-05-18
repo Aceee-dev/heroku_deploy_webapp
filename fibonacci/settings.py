@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'fib_api'
+    'fib_api',
+    'even_odd_10',
 ]
 
 MIDDLEWARE = [
