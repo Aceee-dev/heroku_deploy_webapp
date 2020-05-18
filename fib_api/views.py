@@ -8,16 +8,22 @@ from fib_api.models import FibonacciResults
 
 
 def fibonacci_calculation(num):
+    results=[]
     if num < 2:
-        return 1
+        results.append(1)
+        return results
     else:
         num_seq_1 = 1
         num_seq_2 = 1
+        results.append(1)
+        results.append(1)
         for i in range(2, num):
             temp = num_seq_1 + num_seq_2
+            results.append(temp)
             num_seq_1 = num_seq_2
             num_seq_2 = temp
-        return num_seq_2
+        res=str(results).strip('[]')
+        return res
 
 
 def fib_number(request):

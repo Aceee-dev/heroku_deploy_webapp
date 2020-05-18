@@ -6,7 +6,7 @@ from django.db import models
 class FibonacciResults(models.Model):
 
     number = models.IntegerField()
-    result = models.IntegerField()
+    result = models.CharField(max_length=4000)
     time_taken = models.CharField(max_length=255)
 
     class Meta:
