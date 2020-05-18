@@ -15,6 +15,7 @@ simplegeneric==0.8.1
 six==1.10.0
 traitlets==4.2.2
 wcwidth==0.1.7
+mod-wsgi==4.7.1
 whitenoise==5.0.1
 gunicorn==19.6.0
 setuptools==46.4.0
