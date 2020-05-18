@@ -18,3 +18,4 @@ wcwidth==0.1.7
 whitenoise==5.0.1
 gunicorn==19.6.0
 setuptools==46.4.0
+django-heroku==0.3.1
